@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background-image: url("https://i.postimg.cc/rwD2gC2w/andrew-coelho-a-L7-SA1-ASVd-Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar */
+header {
+  position: fixed;
+  width: 100%;
+  height: 12vh;
+  filter: drop-shadow(0px 11px 17px #1a524f);
+  z-index: 10000;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rem;
+  flex-direction: row;
+}
+
+header nav .box-nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.box-nav ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box-nav ul li a:hover {
+  color: aquamarine;
+  transition-delay: 0.1s;
+}
+
+.logo img {
+  margin-top: 0.3vw;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+nav.sticky {
+  background-color: white;
+}
+
+nav.sticky .box-nav ul li a {
+  color: black;
+}
+
+nav.sticky .box-nav ul li a:hover {
+  color: aquamarine;
+  transition-delay: 0.1s;
+}
+
+/* hero */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+#hero .content {
+  gap: 29px;
+  width: auto;
+  height: auto;
+  padding: 0 10rem;
+}
+
+.content h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.content h1 span {
+  color: #89da59;
+}
+
+.content #description {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+#hero .content button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: white;
+}
+
+#hero .content button:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 20px black;
+  border: 1px solid #89da59;
+}
+
+#hero .content button a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* About-us */
+#about-us {
+  background-color: azure;
+  height: 80vh;
+}
+
+#about-us h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main-about img {
+  height: 50vh;
+  width: 25vw;
+  margin-left: 10rem;
+}
+
+.main-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-about .content-about {
+  width: 50%;
+  margin-right: 4rem;
+}
+
+.main-about .content-about h2 {
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+}
+
+.main-about .content-about h2 span {
+  color: #89da59;
+}
+
+.main-about .content-about p {
+  font-size: 1.3rem;
+  text-align: justify;
+  font-weight: 600;
+}
+
+/* category */
+#category h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#category h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem 5rem 0 5rem;
+  color: whitesmoke;
+}
+
+.box {
+  width: auto;
+  height: 20vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.box .card {
+  width: 15vw;
+  height: 10vw;
+  background-color: red;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px 0 30px;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.box .card img {
+  position: relative;
+  left: 60px;
+}
+
+.box .card h5 {
+  font-size: 1rem;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* contact */
+#contact {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(170, 170, 170);
+  display: flex;
+  padding: 5rem;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+#contact h3 {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 4rem;
+}
+
+#contact form {
+  display: grid;
+  width: auto;
+  padding-top: 3rem;
+}
+
+#contact form .input-style {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 500px;
+  border-radius: 5px;
+}
+
+#contact form #submit-form {
+  margin-bottom: 10px;
+  width: 100px;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#contact form #submit-form:hover {
+  background-color: red;
+}
+
+#contact form #check {
+  width: 500px;
+  text-align: justify;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+form #status {
+  position: relative;
+  top: -15px;
+  left: -150px;
+  letter-spacing: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #1a524f;
+  overflow: hidden;
+}
+
+footer .box-footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 50px;
+}
+
+.box-footer .left {
+  margin-bottom: 50px;
+}
+
+.box-footer .right {
+  margin-right: 100px;
+}
+
+.box-footer .left img {
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+}
+
+.box-footer .right h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.box-footer .right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-footer .right ul li i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  height: 50px;
+  background-color: #298c87;
+  text-align: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
